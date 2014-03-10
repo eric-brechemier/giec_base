@@ -1,7 +1,15 @@
 #GIEC Relational Database Model
 
 ##Installation
-To run the model, you should prealably install ruby 2.0 and rubygems (RVM is recommanded for this task). Hence, install dependencies with bundler :
+To run the model, you should prealably install latest ruby 2.\* and rubygems
+(RVM is recommanded for this task).
+
+```sh
+rvm get stable
+rvm use ruby --install --default
+```
+
+Hence, install dependencies with bundler :
 
 ```sh
 gem install bundler
