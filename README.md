@@ -9,6 +9,23 @@ rvm get stable
 rvm use ruby --install --default
 ```
 
+Note: to allow compiling of the native extension for do_mysql gem,
+[you need to install the development package for MySQL]
+(http://stackoverflow.com/questions/1857059/cant-install-do-mysql-gem).
+
+This installation step depends on your system:
+
+```sh
+# using apt-get (Ubuntu/Debian)
+sudo apt-get install libmysqlclient-dev
+
+# using RPM (Red Hat)
+sudo yum install mysql-devel
+
+# using brew (Mac OS X)
+brew install mysql
+```
+
 Hence, install dependencies with bundler :
 
 ```sh
